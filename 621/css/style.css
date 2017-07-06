@@ -1,0 +1,550 @@
+/* line 1, style.scss */
+body {
+  font-size: .12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+/* line 10, style.scss */
+::-webkit-scrollbar {
+  width: 0px; }
+
+/* line 13, style.scss */
+.header {
+  font-size: .18rem;
+  height: .44rem;
+  line-height: .44rem;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  background: #099fde;
+  color: #fff; }
+  /* line 24, style.scss */
+  .header div i {
+    color: #fff; }
+
+/* line 29, style.scss */
+.back {
+  position: absolute;
+  left: .1rem;
+  color: #fff;
+  font-size: .16rem; }
+
+/* line 35, style.scss */
+.march {
+  position: absolute;
+  top: 0;
+  right: .1rem;
+  color: #fff;
+  font-size: .16rem; }
+
+/* line 42, style.scss */
+.content {
+  -webkit-flex: 1;
+  overflow-y: scroll;
+  background: #fff; }
+
+/* line 48, style.scss */
+.nav {
+  width: 100%;
+  height: .4rem;
+  background: #099fde;
+  line-height: .38rem;
+  text-align: center;
+  position: relative; }
+  /* line 55, style.scss */
+  .nav input {
+    width: 80%;
+    height: .24rem;
+    padding-left: 10%;
+    border: 1px solid #ccc;
+    outline: none; }
+  /* line 62, style.scss */
+  .nav i {
+    position: absolute;
+    top: 0;
+    left: 8%; }
+
+/* line 68, style.scss */
+.ticket {
+  width: 100%;
+  height: .6rem;
+  display: flex; }
+  /* line 72, style.scss */
+  .ticket li {
+    flex: 1;
+    text-align: center;
+    line-height: .5rem;
+    border-bottom: 1px solid #ccc; }
+    /* line 77, style.scss */
+    .ticket li img {
+      padding: .05rem;
+      padding-top: .1rem;
+      width: .4rem;
+      height: .3rem;
+      float: left; }
+    /* line 84, style.scss */
+    .ticket li span {
+      display: block;
+      font-size: .14rem; }
+  /* line 89, style.scss */
+  .ticket li:nth-child(1) {
+    border-right: 1px solid #ccc; }
+
+/* line 93, style.scss */
+.banner {
+  width: 100%;
+  height: 1.25rem; }
+  /* line 96, style.scss */
+  .banner img {
+    width: 100%;
+    height: 1.25rem; }
+
+/* line 101, style.scss */
+.kursaal {
+  width: 100%;
+  height: .3rem;
+  display: flex;
+  overflow: hidden; }
+  /* line 106, style.scss */
+  .kursaal li {
+    flex: 1;
+    text-align: center;
+    line-height: .3rem;
+    font-size: .1rem; }
+  /* line 112, style.scss */
+  .kursaal li:nth-child(1) {
+    float: left; }
+    /* line 114, style.scss */
+    .kursaal li:nth-child(1) i {
+      color: #65bedf; }
+  /* line 118, style.scss */
+  .kursaal li:nth-child(2) {
+    flex: 2.2; }
+    /* line 120, style.scss */
+    .kursaal li:nth-child(2) i {
+      color: #ff3649; }
+  /* line 124, style.scss */
+  .kursaal li:nth-child(3) {
+    flex: 2.6; }
+  /* line 127, style.scss */
+  .kursaal li:nth-child(4) {
+    flex: 2; }
+
+/* line 131, style.scss */
+.news {
+  width: 100%;
+  height: auto; }
+
+/* line 135, style.scss */
+.wrappers {
+  width: 100%;
+  height: 1.5rem;
+  overflow: hidden;
+  position: relative; }
+  /* line 140, style.scss */
+  .wrappers .scroller {
+    width: 100%;
+    height: 4rem;
+    position: absolute; }
+    /* line 145, style.scss */
+    .wrappers .scroller ul li {
+      float: left;
+      width: 20%;
+      margin-left: .1rem;
+      text-align: center;
+      line-height: .3rem;
+      padding-top: .1rem; }
+      /* line 152, style.scss */
+      .wrappers .scroller ul li i {
+        font-size: .3rem; }
+      /* line 155, style.scss */
+      .wrappers .scroller ul li span {
+        display: block;
+        font-size: .1rem; }
+
+/* line 163, style.scss */
+.section {
+  width: 100%;
+  height: 1.2rem;
+  display: flex; }
+  /* line 167, style.scss */
+  .section li:nth-child(1) {
+    line-height: .6rem;
+    padding-left: .1rem;
+    flex: 1.5; }
+    /* line 171, style.scss */
+    .section li:nth-child(1) img {
+      padding-left: .1rem;
+      width: .6rem;
+      height: .5rem; }
+  /* line 177, style.scss */
+  .section li:nth-child(2) {
+    flex: 2;
+    display: flex;
+    padding-top: .25rem; }
+    /* line 181, style.scss */
+    .section li:nth-child(2) img {
+      padding-top: .08rem;
+      width: .3rem;
+      height: .18rem;
+      padding-left: .1rem; }
+    /* line 187, style.scss */
+    .section li:nth-child(2) dl {
+      flex: 1;
+      float: left;
+      text-align: center;
+      padding-left: .1rem; }
+
+/* line 195, style.scss */
+.conts {
+  margin-top: .1rem;
+  width: 100%;
+  height: .35rem;
+  border-bottom: 1px solid #ccc; }
+  /* line 200, style.scss */
+  .conts .conts-t {
+    float: left;
+    text-align: center;
+    width: .1rem;
+    height: .15rem;
+    border-radius: 3px;
+    background: #fd5400;
+    margin: .1rem .1rem 0; }
+    /* line 208, style.scss */
+    .conts .conts-t i {
+      color: #fff; }
+  /* line 212, style.scss */
+  .conts h5 {
+    padding-top: .1rem; }
+
+/* line 216, style.scss */
+.list {
+  width: 100%;
+  height: auto; }
+  /* line 219, style.scss */
+  .list dl {
+    height: 1.05rem;
+    border-bottom: 1px solid #ccc; }
+    /* line 222, style.scss */
+    .list dl dt {
+      padding: .08rem .2rem 0 .08rem;
+      float: left; }
+      /* line 225, style.scss */
+      .list dl dt img {
+        width: 1rem;
+        height: .9rem; }
+    /* line 230, style.scss */
+    .list dl dd {
+      padding-top: .1rem; }
+      /* line 232, style.scss */
+      .list dl dd h4 {
+        padding-bottom: .08rem; }
+      /* line 235, style.scss */
+      .list dl dd span {
+        color: #84cfee;
+        font-size: .1rem; }
+      /* line 239, style.scss */
+      .list dl dd span:nth-child(2) {
+        float: left;
+        border: 1px solid #84cfee; }
+      /* line 243, style.scss */
+      .list dl dd span:nth-child(3) {
+        margin-left: .05rem;
+        border: 1px solid #84cfee; }
+      /* line 247, style.scss */
+      .list dl dd ul {
+        margin-top: .1rem; }
+        /* line 249, style.scss */
+        .list dl dd ul li {
+          float: left;
+          padding-top: .1rem; }
+        /* line 253, style.scss */
+        .list dl dd ul li:nth-child(1) {
+          float: left;
+          font-size: .1rem; }
+          /* line 256, style.scss */
+          .list dl dd ul li:nth-child(1) b {
+            color: #ff7d13;
+            font-size: .1rem; }
+        /* line 261, style.scss */
+        .list dl dd ul li:nth-child(2) {
+          padding-left: .03rem;
+          font-size: .1rem; }
+        /* line 265, style.scss */
+        .list dl dd ul li:nth-child(3) {
+          padding-left: .05rem;
+          font-size: .1rem; }
+
+/* line 275, style.scss */
+.search {
+  width: 100%;
+  height: .4rem;
+  display: flex;
+  line-height: .35rem;
+  background: #F0EAE4; }
+  /* line 281, style.scss */
+  .search p {
+    flex: 1; }
+  /* line 284, style.scss */
+  .search p:nth-child(1) {
+    text-align: center;
+    font-size: .14rem; }
+  /* line 288, style.scss */
+  .search p:nth-child(2) {
+    flex: 3;
+    height: .44rem;
+    position: relative; }
+    /* line 292, style.scss */
+    .search p:nth-child(2) input {
+      width: 100%;
+      height: 70%;
+      border-radius: 10px;
+      border: 0;
+      padding-left: 30px;
+      box-sizing: border-box;
+      font-size: .1rem; }
+    /* line 301, style.scss */
+    .search p:nth-child(2) i {
+      position: absolute;
+      left: 5%;
+      top: 5%;
+      color: red; }
+  /* line 308, style.scss */
+  .search p:nth-child(3) {
+    text-align: center; }
+    /* line 310, style.scss */
+    .search p:nth-child(3) i {
+      font-size: .16rem; }
+
+/* line 315, style.scss */
+.banners {
+  width: 100%;
+  height: 1.15rem; }
+  /* line 318, style.scss */
+  .banners img {
+    width: 100%;
+    height: 1.15rem; }
+
+/* line 323, style.scss */
+.img {
+  width: 100%;
+  height: auto; }
+  /* line 326, style.scss */
+  .img img {
+    width: 100%; }
+  /* line 329, style.scss */
+  .img p {
+    text-align: center;
+    padding-top: 5px;
+    font-size: .09rem; }
+
+/* line 335, style.scss */
+.wraps {
+  width: 100%;
+  height: .4rem;
+  overflow: hidden;
+  position: relative;
+  padding-top: .1rem; }
+  /* line 341, style.scss */
+  .wraps .scroller {
+    width: 14rem;
+    height: .4rem;
+    position: absolute; }
+    /* line 346, style.scss */
+    .wraps .scroller ul li {
+      border: 1px solid #ccc;
+      padding: .02rem .085rem;
+      border-radius: .15rem;
+      line-height: .2rem;
+      height: .2rem;
+      float: left;
+      margin-left: .035rem; }
+
+/* line 358, style.scss */
+.charter {
+  width: 100%;
+  height: auto; }
+  /* line 361, style.scss */
+  .charter dl {
+    display: flex;
+    padding-left: .1rem; }
+    /* line 364, style.scss */
+    .charter dl dt {
+      flex: 1; }
+      /* line 367, style.scss */
+      .charter dl dt img {
+        padding-top: .01rem;
+        width: .7rem;
+        height: .55rem; }
+    /* line 373, style.scss */
+    .charter dl dd {
+      flex: 9;
+      background: #FBF3E9;
+      padding-left: .1rem; }
+      /* line 377, style.scss */
+      .charter dl dd p:nth-child(1) {
+        font-size: .1rem;
+        color: #333; }
+      /* line 381, style.scss */
+      .charter dl dd p:nth-child(2) {
+        font-size: .09rem;
+        color: #5A5A59;
+        line-height: .2rem; }
+
+/* line 392, style.scss */
+.text {
+  width: 100%;
+  height: auto; }
+  /* line 395, style.scss */
+  .text p {
+    width: 90%;
+    margin: 10px auto;
+    position: relative; }
+    /* line 399, style.scss */
+    .text p input {
+      width: 100%;
+      height: .27rem;
+      border-radius: .14rem;
+      border: 1px solid #ccc;
+      padding-left: .1rem;
+      box-sizing: border-box; }
+    /* line 407, style.scss */
+    .text p i {
+      width: .2rem;
+      height: .2rem;
+      font-size: .1rem;
+      color: #fff;
+      text-align: center;
+      line-height: .22rem;
+      position: absolute;
+      right: .1rem;
+      top: .03rem;
+      background: #ccc;
+      border-radius: 50%; }
+
+/* line 422, style.scss */
+.plete {
+  width: 100%;
+  height: auto; }
+
+/* line 426, style.scss */
+.ftable {
+  width: 100%;
+  height: 1.9rem; }
+  /* line 429, style.scss */
+  .ftable p:nth-child(1) {
+    font-size: .14rem;
+    padding-left: .1rem; }
+  /* line 433, style.scss */
+  .ftable dl {
+    display: flex;
+    padding-left: .1rem;
+    padding-top: .1rem;
+    position: relative; }
+    /* line 439, style.scss */
+    .ftable dl dt img {
+      width: 1rem; }
+    /* line 445, style.scss */
+    .ftable dl dd p:nth-child(1) span {
+      font-size: .12rem;
+      color: red; }
+    /* line 449, style.scss */
+    .ftable dl dd p:nth-child(1) i {
+      padding-left: .05rem; }
+    /* line 453, style.scss */
+    .ftable dl dd p {
+      padding-left: .1rem;
+      font-size: .1rem; }
+    /* line 458, style.scss */
+    .ftable dl dd p:nth-child(2) span:nth-child(2) {
+      color: #FF9204;
+      padding-left: .1rem; }
+    /* line 463, style.scss */
+    .ftable dl dd p:nth-child(4) {
+      position: absolute;
+      right: 5%;
+      color: #999; }
+  /* line 470, style.scss */
+  .ftable .field {
+    width: 100%;
+    height: auto;
+    padding-top: .1rem;
+    border-bottom: 10px solid #F7F7F7; }
+    /* line 475, style.scss */
+    .ftable .field dl {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      padding: .05rem;
+      line-height: .15rem;
+      font-size: .1rem;
+      color: #000;
+      background: #F7F7F7;
+      border-radius: .1rem;
+      margin-bottom: .05rem;
+      display: flex; }
+      /* line 488, style.scss */
+      .ftable .field dl dt img {
+        width: .4rem;
+        height: .4rem;
+        border-radius: 50%; }
+      /* line 495, style.scss */
+      .ftable .field dl dd p {
+        line-height: .2rem;
+        font-size: .1rem; }
+
+/* line 503, style.scss */
+.footer {
+  height: .5rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  line-height: .2rem;
+  background: #fff;
+  display: flex; }
+  /* line 511, style.scss */
+  .footer div {
+    flex: 1; }
+  /* line 514, style.scss */
+  .footer div:nth-child(1) {
+    display: flex; }
+    /* line 516, style.scss */
+    .footer div:nth-child(1) a {
+      flex: 1;
+      padding-top: .1rem; }
+      /* line 519, style.scss */
+      .footer div:nth-child(1) a i {
+        font-size: .2rem; }
+      /* line 522, style.scss */
+      .footer div:nth-child(1) a span {
+        display: block;
+        text-align: center; }
+    /* line 527, style.scss */
+    .footer div:nth-child(1) a:hover {
+      color: #ff7d13; }
+  /* line 532, style.scss */
+  .footer div:nth-child(2) {
+    text-align: center;
+    line-height: .44rem; }
+  /* line 536, style.scss */
+  .footer div:nth-child(2):hover {
+    background: #ff7d13;
+    color: #fff; }
+  /* line 541, style.scss */
+  .footer aside {
+    flex: 1;
+    padding-top: .05rem; }
+    /* line 544, style.scss */
+    .footer aside i {
+      font-size: .2rem; }
+    /* line 547, style.scss */
+    .footer aside span {
+      display: block; }
+  /* line 551, style.scss */
+  .footer aside:hover {
+    color: limegreen; }
+
+/*# sourceMappingURL=style.css.map */
