@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>single page application</title>
+	<style type="text/css">
+		.red{
+			color: red;
+			font-size: 28px;
+		}
+		.yellow{
+			color: yellow;
+		}
+	</style>
+</head>
+<body ng-app="myApp">
+	<div>
+		<input type="text" ng-model="user">
+		<p>hello:{{user}} </p>
+	</div>
+	<hr>
+	ng-bind用于绑定
+	<div ng-init="firstName='hello'">
+		<p ng-bind="firstName"></p>
+	</div>
+	<hr>
+	ng-class修改颜色<br>
+	<select ng-model="home">
+		<option value="red">红色</option>
+		<option value="yellow">粉色</option>
+	</select>
+	<div ng-class="home">
+		<p>memeda wangjingru</p>
+	</div>
+	<hr>
+	ng-repeat用于循环
+	<div ng-init="shui=['apply','banner','orange']">
+		<p>循环颜色</p>
+		<ul>
+			<li ng-repeat="shu in shui">
+				{{shu}}
+			</li>
+		</ul>
+	</div>
+	<hr>
+    ng-model绑定输入框的值<br>
+	ng-click点击发送控制台
+	<div ng-controller="login">
+		<input type="text" ng-model="username">
+		<input type="button" value="登录" ng-click="show()">
+		<p>
+			hello{{username}}
+		</p>
+	</div>
+	<hr>
+	ng-if <br>
+	<input type="checkbox" ng-model="myIf" ng-init="myIf=true">
+	<div ng-if="myIf">
+		<p>你好啊</p>
+	</div>
+
+	<hr>
+	ng-hide为true时隐藏，为false时显示<br>
+	ng-show为true时显示，为false时隐藏<br>
+	<div ng-hide="true">
+		这句话隐藏了
+	</div>
+	<div ng-show="true">
+		上一句话隐藏，这句话显示
+	</div>
+	<hr>
+	ng-init初始化
+	<div ng-init="default='yangshuai'">
+		<p>请输入用户名：</p>
+		<input type="text" ng-model="default">
+		<p>用户名为:{{default}} </p>
+	</div>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script>
+		var app = angular.module('myApp',[]);
+		app.controller("login",function($scope) {
+			$scope.username="yangshuai";
+			$scope.show=function () {
+				console.log($scope.username);
+			}
+		})
+	</script>
+</body>
+</html>

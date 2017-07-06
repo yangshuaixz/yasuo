@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css" />
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css" />
+</head>
+<body>
+    <header class="header">
+    	<a href="#" class="back"><i class="icon iconfont">&#xe660;</i></a>
+        <span>礼品卡</span>
+        <a href="#" class="march"><i class="icon iconfont">&#xe655;</i>&nbsp;&nbsp;<i class="icon iconfont">&#xe656;</i></a>
+    </header>
+    <div class="content">
+        <div class="search">
+            <p>北京</p>
+            <p><input type="text" placeholder="搜索目的地,餐馆名,地址"><i class="icon iconfont">&#xe649;</i></p>
+            <p><i class="icon iconfont">&#xe62b;</i></p>
+        </div>
+        <div class="swiper-container banners">
+        	<div class="swiper-wrapper">
+        		<div class="swiper-slide"><img src="images/a1.png" alt=""></div>
+        	    <div class="swiper-slide"><img src="images/a1.png" alt=""></div>
+        	    <div class="swiper-slide"><img src="images/a1.png" alt=""></div>
+        	    <div class="swiper-slide"><img src="images/a1.png" alt=""></div>
+        	</div>  
+        </div>
+        <div class="img">
+        	<img src="images/a2.png" alt="">
+        	<p>行家推荐 编辑严选 携程认证 不辜负旅行每一餐</p>
+        </div>
+        <div class="wrapper wraps">
+        	<div class="scroller">
+        		<ul>
+	                <li>全部</li>
+	                <li>星级</li>
+	                <li>甄选</li>
+	                <li>风味</li>
+	                <li>烤鸭</li>
+	                <li>全部</li>
+	                <li>星级</li>
+	                <li>甄选</li>
+	                <li>风味</li>
+	                <li>烤鸭</li>
+	                 <li>全部</li>
+	                <li>星级</li>
+	                <li>甄选</li>
+	                <li>风味</li>
+	                <li>烤鸭</li>
+	                <li>全部</li>
+	                <li>星级</li>
+	                <li>甄选</li>
+	                <li>风味</li>
+	                <li>烤鸭</li>
+	                 <li>全部</li>
+	                <li>星级</li>
+	                <li>甄选</li>
+	                <li>风味</li>
+	                <li>烤鸭</li>
+	                <li>全部</li>
+	                <li>星级</li>
+	                <li>甄选</li>
+	                <li>风味</li>
+	                <li>烤鸭</li>
+	            </ul>
+        	</div>
+        </div>
+        <div class="charter">
+            <dl>
+                <dt><img src="images/a3.png" alt=""></dt>
+                <dd>
+                    <p>北京最值得吃的<span>13道</span>特色菜</p>
+                    <p>老北京炸酱面,涮羊肉,卤肉,爆肚,炒肝儿,驴打滚,灌肠,北京烤鸭</p>
+                </dd>
+            </dl>
+        </div>
+        <div class="text">
+            <p><input type="text" placeholder="北京市海淀区唐家岭路"><i class="icon iconfont">&#xe622;</i></p>
+        </div>
+        <div class="plete">
+        	<div class="ftable">
+	            <p><b>净空真私宅烤全羊 (龙城总店)</b></p>
+	            <dl>
+	                <dt><img src="images/a4.png" alt=""></dt>
+	                <dd>
+	                    <p><span>美食林针选</span><i class="icon iconfont">&#xe646;</i></p>
+	                    <p><span>人均</span><span>￥195</span></p>
+	                    <p>西北菜</p>
+	                    <p>距你4.7公里</p>
+	                </dd>
+	            </dl>
+	            <div class="field">
+	                <dl>
+	                    <dt><img src="images/a8.png" alt=""></dt>
+	                    <dd><p>旅行者推荐：藏在私宅中的美味,烤全羊采用西北王私厨的秘方,让人回味无穷。</p></dd>
+	                </dl>
+	            </div>
+	        </div>
+        </div>
+        
+    </div>
+    <footer class="footer">
+    		<aside>
+    			<i class="icon iconfont">&#xe69e;</i>
+    			<span>地表共享</span>
+    		</aside>
+    		<aside>
+    			<i class="icon iconfont">&#xe625;</i>
+    			<span>菜系</span>
+    		</aside>
+    		<aside>
+    			<i class="icon iconfont">&#xe62b;</i>
+    			<span>星级/特色</span>
+    		</aside>
+    		<aside>
+    			<i class="icon iconfont">&#xe695;</i>
+    			<span>距离最近</span>
+    		</aside>
+    		
+    </footer>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"> </script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript">
+    	var swiper = new Swiper('.swiper-container');
+    	var iscroll = new IScroll('.wrapper',{
+    		scrollY:false,
+    		scrollX:true
+    	});
+    		$.ajax({
+    		url:'data/data.json',
+    		success:function(result){
+    			console.log(result);
+    			var str = "";
+    			if(result.isSuccess && result.errorCode==0){
+    				$.each(result.text,function(index,item){
+    					console.log(item.Text);
+    					str+="<div class='ftable'>"+
+				            "<p><b>"+item.Text.show+"</b></p>"+
+				            "<dl>"+
+				                "<dt><img src="+item.Text.img+" alt=''></dt>"+
+				                "<dd>"+
+				                    "<p><span>"+item.Text.sum+"</span><i class='icon iconfont'>"+item.Text.num+"</i></p>"+
+				                    "<p><span>"+item.Text.align+"</span><span>"+item.Text.shot+"</span></p>"+
+				                    "<p>"+item.Text.tach+"</p>"+
+				                    "<p>"+item.Text.photo+"</p>"+
+				                "</dd>"+
+				            "</dl>"+
+				            "<div class='field'>"+
+				                "<dl>"+
+				                    "<dt><img src="+item.Text.seek+" alt=''></dt>"+
+				                    "<dd><p>"+item.Text.cont+"</p></dd>"+
+				                "</dl>"+
+				            "</div>"+
+				        "</div>"
+    				})
+    				$('.complete').html(str);
+    			}
+    			
+    		}
+    		
+    	})
+    </script>
+</body>
+</html>
